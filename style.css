@@ -1,0 +1,1336 @@
+/*
+  Ultra-Premium Dark Portfolio — style.css
+  For: High-status forex trader / entrepreneur / thought leader
+  Dark-mode-only, responsive, glassmorphism, premium typography
+*/
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Inter:wght@300;400;600;700;800&display=swap');
+
+/* Root variables */
+:root {
+    --bg-body: #050505;
+    --bg-card: #0A0A0A;
+    --text-main: #F0F0F0;
+    --accent-gold: #C5A059;
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: 1px solid rgba(255, 255, 255, 0.08);
+    --radius: 12px;
+    --container-max: 1200px;
+    --gap: 24px;
+    --shadow-strong: 0 10px 30px rgba(0, 0, 0, 0.8);
+    --shadow-soft: 0 6px 18px rgba(0, 0, 0, 0.6);
+    --muted: rgba(240, 240, 240, 0.5);
+}
+
+/* Modern reset & base */
+*,
+*::before,
+*::after {
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%
+}
+
+html,
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    padding: 0
+}
+
+ul[role='list'],
+ol[role='list'] {
+    list-style: none
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit
+}
+
+button {
+    background: none;
+    border: 0
+}
+
+/* Page base styles */
+html {
+    background: var(--bg-body);
+    color: var(--text-main);
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'EB Garamond', serif;
+    color: var(--text-main);
+    letter-spacing: -0.02em
+}
+
+h1 {
+    font-size: clamp(2rem, 4vw, 3.6rem);
+    font-weight: 700
+}
+
+h2 {
+    font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+    font-weight: 600
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 600
+}
+
+p {
+    color: var(--text-main);
+    font-size: 1rem
+}
+
+.lead {
+    color: var(--muted);
+    font-size: 1.05rem;
+    max-width: 70ch
+}
+
+/* Container */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px
+}
+
+/* Section padding */
+.section-padding {
+    padding: 40px 20px
+
+}
+
+/* Grid system */
+.grid-system {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--gap)
+}
+
+/* Split Layout System */
+.split-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.split-layout.reverse-desktop {
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (min-width: 769px) {
+    .split-layout.reverse-desktop {
+        grid-auto-flow: dense;
+    }
+
+    .split-layout.reverse-desktop> :nth-child(1) {
+        order: 1;
+    }
+
+    .split-layout.reverse-desktop> :nth-child(2) {
+        order: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .split-layout {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .split-layout.reverse-desktop {
+        flex-direction: column;
+    }
+}
+
+@media(min-width:768px) {
+    .grid-system {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+@media(min-width:1200px) {
+    .grid-system {
+        grid-template-columns: repeat(3, 1fr)
+    }
+}
+
+/* Card (Glassmorphism) */
+.card {
+    background: var(--glass-bg);
+    border: var(--glass-border);
+    border-radius: var(--radius);
+    padding: 20px;
+    box-shadow: var(--shadow-soft);
+    backdrop-filter: blur(10px) saturate(120%);
+    -webkit-backdrop-filter: blur(10px) saturate(120%);
+    color: var(--text);
+    transition: transform 280ms cubic-bezier(.2, .9, .3, 1), box-shadow 280ms ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-strong)
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: 1.5px solid var(--accent-gold);
+    color: var(--accent-gold);
+    background: transparent;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 220ms ease;
+}
+
+.btn:focus {
+    outline: 3px solid rgba(212, 168, 87, 0.12);
+    outline-offset: 4px
+}
+
+.btn:hover {
+    color: #000;
+    background: var(--accent-gold);
+    transform: translateY(-2px)
+}
+
+.btn--pill {
+    border-radius: 999px
+}
+
+.btn--gold {
+    border-color: var(--accent-gold);
+    color: var(--accent-gold)
+}
+
+.btn--gold:hover {
+    background: var(--accent-gold);
+    color: #000
+}
+
+/* Small form/button utilities */
+.btn--ghost {
+    border-color: transparent;
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.02)
+}
+
+/* Modal overlay and content */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 1200;
+    padding: 40px;
+}
+
+.modal-content {
+    width: 100%;
+    max-width: 920px;
+    border-radius: 14px;
+    padding: 28px;
+    position: relative;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+    border: var(--glass-border);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+    color: var(--text);
+    backdrop-filter: blur(12px) saturate(120%);
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    size: 100px;
+    color: var(--muted);
+    background: transparent;
+    border-radius: 8px;
+    padding: 8px
+}
+
+.modal-close:hover {
+    color: var(--text)
+}
+
+/* Hero Section */
+.hero-section {
+    margin-top: 80px;
+    padding: 48px 0;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.08);
+}
+
+.hero-text h1 {
+    font-family: 'EB Garamond', serif;
+    font-size: clamp(2.1rem, 5vw, 3.6rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+    color: var(--text-main);
+}
+
+.hero-text h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(1rem, 2.2vw, 1.3rem);
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--text-main);
+    max-width: 55ch;
+    margin-bottom: 32px;
+}
+
+.btn-gold {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 32px;
+    background: transparent;
+    border: 2px solid var(--accent-gold);
+    color: var(--accent-gold);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 220ms ease;
+}
+
+.btn-gold:hover {
+    background: var(--accent-gold);
+    color: #000;
+    transform: translateY(-2px);
+}
+
+.btn-gold:focus {
+    outline: 2px solid var(--accent-gold);
+    outline-offset: 4px;
+}
+
+/* Lists & separators */
+.divider {
+    height: 1px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04));
+    margin: 20px 0
+}
+
+/* Small utilities */
+.muted {
+    color: var(--muted)
+}
+
+.accent {
+    color: var(--accent-gold)
+}
+
+.gold {
+    color: var(--accent-gold)
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0
+}
+
+/* Cards for market tiles */
+.market-tile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px
+}
+
+.market-tile .symbol {
+    font-weight: 700;
+    font-family: 'Playfair Display';
+    font-size: 1.05rem
+}
+
+.market-tile .price {
+    font-variant-numeric: tabular-nums
+}
+
+/* Tables (minimalist, premium) */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem
+}
+
+.table th,
+.table td {
+    padding: 12px 14px;
+    text-align: left;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.03)
+}
+
+.table thead th {
+    color: var(--muted);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.08em
+}
+
+/* Accessibility: reduce motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important
+    }
+}
+
+/* Footer */
+.site-footer {
+    padding: 10px 20px;
+    color: var(--muted);
+    border-top: 1px solid rgba(212, 175, 55, 0.08);
+    margin-top: 0px
+}
+
+/* Navigation Bar (Fixed) */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(5, 5, 5, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.12);
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+}
+
+.logo {
+    font-family: 'EB Garamond', serif;
+    font-size: clamp(1.2rem, 2.5vw, 1.4rem);
+    font-weight: 700;
+    color: var(--text-main);
+    letter-spacing: 0.05em;
+    margin: 0;
+}
+
+.hamburger {
+    display: none;
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--text-main);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color 220ms ease;
+}
+
+.hamburger:hover {
+    color: var(--accent-gold);
+}
+
+/* =========================================
+   HAMBURGER ANIMATION (Bars to X)
+   ========================================= */
+/* .hamburger span {
+    transition: all 0.3s ease-in-out;
+    transform-origin: center;
+} */
+
+/* When the menu is OPEN (active class added) */
+.hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0; /* Hide the middle bar */
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-link {
+    color: var(--text-main);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 220ms ease;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--accent-gold);
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--accent-gold);
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 82%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 16px;
+        background: rgba(5, 5, 5, 0.87);
+        border-bottom-left-radius : 32px;
+        border-bottom-right-radius : 32px;
+        border-bottom: 2px solid #C5A059;
+        padding: 24px 24px;
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-link {
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .nav-link:last-child {
+        border-bottom: none;
+    }
+
+    .nav-link.active::after {
+        display: none;
+    }
+}
+
+/* Hero Content */
+.hero-content {
+    text-align: center;
+    position: relative;
+    z-index: 3;
+    max-width: 600px;
+}
+
+.hero-name {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-name span {
+    display: inline;
+}
+
+.hero-content h1 {
+    margin-bottom: 12px;
+}
+
+.hero-content h2 {
+    color: var(--muted);
+    margin-bottom: 32px;
+}
+
+.hero-ctas {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Hero Fade Mask */
+.hero-fade-mask {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to bottom, transparent, #050505);
+    z-index: 3;
+    pointer-events: none;
+}
+
+/* Button variants */
+.btn--gold {
+    border-color: var(--accent-gold);
+    color: var(--accent-gold);
+}
+
+.btn--gold:hover {
+    background: var(--accent-gold);
+    color: #000;
+}
+
+/* About Section */
+.about-section {
+    padding: 80px 0;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.08);
+}
+
+.about-text h2 {
+    font-family: 'EB Garamond', serif;
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 18px;
+    color: var(--text-main);
+}
+
+.about-text p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--text-main);
+    margin-bottom: 12px;
+}
+
+.about-text p:last-child {
+    margin-bottom: 0;
+}
+
+.about-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Section headers */
+.section-header {
+    text-align: center;
+    margin-bottom: 48px;
+    margin-top: 24px;
+}
+
+.section-header h2 {
+    margin-bottom: 12px;
+    margin-top: 24px;
+}
+
+.section-subtitle {
+    color: var(--muted);
+    font-size: 1.05rem;
+    max-width: 60ch;
+    margin: 0 auto;
+}
+
+.section-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+/* Contact Section */
+.contact-section {
+    background: linear-gradient(180deg, rgba(10, 92, 54, 0.02), rgba(212, 168, 87, 0.01));
+}
+
+.contact-wrapper {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    display: grid;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-label {
+    color: var(--heading);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.form-input {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 12px 14px;
+    color: var(--text);
+    font-size: 0.95rem;
+    transition: border-color 220ms ease, background 220ms ease;
+}
+
+.form-input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--accent-gold);
+}
+
+.form-textarea {
+    resize: vertical;
+    font-family: 'Inter';
+}
+
+/* Footer */
+.site-footer .container {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.footer-copyright p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.signage {
+   margin: 0;
+    font-size: 0.8rem;
+}
+
+.social-icon {
+    color: var(--muted);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.02);
+    transition: color 220ms ease, background 220ms ease;
+}
+
+.social-icon:hover {
+    color: var(--accent-gold);
+    background: rgba(212, 168, 87, 0.08);
+}
+
+/* Small responsive tweaks */
+@media(max-width:480px) {
+    .section-padding {
+        padding: 56px 14px
+    }
+
+    .card {
+        padding: 16px
+    }
+
+    .btn {
+        padding: 8px 14px
+    }
+
+    .nav-links {
+        gap: 14px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-bg-text span {
+        font-size: clamp(4rem, 12vw, 8rem);
+    }
+
+    .hero-content {
+        padding-bottom: 40px;
+    }
+
+    .about-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 24px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-image {
+    display: none;
+    
+}
+
+}
+
+/* Desktop safeguard */
+@media(min-width:769px) {
+    .hero-cutout {
+        right: -5%;
+    }
+    
+}
+
+/* Thought Cards */
+.thought-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: all 220ms ease;
+}
+
+.thought-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--accent-gold);
+}
+
+.thought-card:focus {
+    outline: 2px solid var(--accent-gold);
+    outline-offset: 3px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.card-category {
+    color: #C5A059;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.card-date {
+    color: #666;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+}
+
+.card-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 1.5;
+}
+
+.card-summary {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: #A0A0A0;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+}
+
+.card-cta {
+    font-family: 'Inter', sans-serif;
+    color: #C5A059;
+    font-weight: 500;
+    font-size: 0.85rem;
+    transition: transform 220ms ease;
+}
+
+.thought-card:hover .card-cta {
+    transform: translateX(4px);
+}
+
+
+/* Gallery Items */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius);
+    border: var(--glass-border);
+    aspect-ratio: 1;
+    cursor: pointer;
+    background: var(--glass-bg);
+}
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 320ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.gallery-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 320ms ease;
+}
+
+.gallery-caption {
+    color: var(--heading);
+    font-size: 0.95rem;
+    font-weight: 500;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.gallery-item:hover {
+    box-shadow: var(--shadow-strong);
+}
+
+.gallery-item:hover .gallery-image {
+    transform: scale(1.08);
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-item:focus {
+    outline: 2px solid var(--accent-gold);
+    outline-offset: 4px;
+}
+
+/* Square Image Cards */
+.square-img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    transition: transform 320ms ease, box-shadow 320ms ease;
+    object-position: center top;
+}
+
+.square-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 35px rgba(212, 175, 55, 0.1);
+}
+
+.hero-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Modal Enhancements */
+.modal-overlay {
+    animation: fadeIn 220ms ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.modal-content {
+    animation: slideUp 320ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 12px;
+}
+
+.modal-category {
+    color: var(--accent-gold);
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.modal-date {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin-right: 16px; /* Pushes the date to the left, away from the X */
+    position: relative;
+}
+
+.modal-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 24px;
+    line-height: 1.3;
+}
+
+.modal-body {
+    color: var(--text-main);
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+.modal-body p {
+    margin-bottom: 16px;
+}
+
+.modal-gallery {
+    max-width: 800px;
+}
+
+.modal-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.modal-gallery-caption {
+    color: var(--text);
+    text-align: left;
+    font-size: 0.95rem;
+   
+    
+}
+.modal-gallery-date {
+    color: var(--muted);
+    text-align: left;
+    font-size: 0.8rem;
+   
+   
+}
+/* =========================================
+   GALLERY CLOSE BUTTON (Bottom Right)
+   ========================================= */
+
+/* 1. Target the close button inside the Gallery Modal specifically */
+.close-gallery {
+    position: absolute; /* Float it */
+    top: auto;          /* Reset the default top position */
+    left: auto;         /* Reset any left positioning */
+    
+    bottom: 30px;       /* Anchor to Bottom */
+    right: 30px;        /* Anchor to Right */
+    
+    /* 2. Make it a clickable "Button" Style */
+    width: 35px;
+    height: 35px;
+    background: rgba(0, 0, 0, 0.8); /* Dark background for contrast */
+    border: 1px solid var(--accent-gold); /* Gold border */
+    border-radius: 50%; /* Circle shape */
+    color: var(--accent-gold);
+    
+    /* 3. Center the X inside */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 100; /* Ensure it floats above the image */
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.close-gallery:hover {
+    background: var(--accent-gold);
+    color: #000;
+    transform: scale(1.1);
+}
+
+/* =========================================
+   SCROLLABLE MODAL (The Fix)
+   ========================================= */
+
+.modal-thought {
+    /* 1. Limit the height so it never goes off-screen */
+    max-height: 85vh; 
+    
+    /* 2. Enable scrolling inside the box */
+    overflow-y: auto;
+    
+    /* 3. Keep the layout pretty */
+    margin: 5% auto; /* Centers it vertically */
+    display: block; /* Ensures box model works */
+}
+
+/* --- CUSTOM ROLEX SCROLLBAR FOR MODAL --- */
+
+/* Width */
+.modal-content::-webkit-scrollbar {
+    width: 6px; /* Slightly wider than the card scrollbar */
+}
+
+/* Track */
+.modal-content::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3); 
+    border-radius: 4px;
+    margin-top: 20px; /* Spacing from the top rounded corners */
+    margin-bottom: 20px;
+}
+
+/* Handle */
+.modal-content::-webkit-scrollbar-thumb {
+    background: var(--accent-gold); 
+    border-radius: 4px;
+}
+
+/* Handle Hover */
+.modal-content::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+}
+/* Section Header with H1 */
+.section-header h1 {
+    margin-bottom: 12px;
+}
+.gallery-overlay{
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    gap: 8px;
+}
+.gallery-date {
+    color: rgba(255, 255, 255, 0.692);
+    font-size: 12px;
+}
+
+/* =========================================
+   MOBILE & TABLET UTILITIES (Add to Bottom)
+   ========================================= */
+
+@media (max-width: 768px) {
+    
+    /* 1. HIDE IMAGES ON MOBILE */
+    /* Add class="desktop-only" to any image/div you want to hide on screens smaller than 768px */
+    .desktop-only {
+        display: flex !important;
+    }
+
+    /* 2. REORDER CONTENT (TEXT FIRST) */
+    /* If your layout puts the image on top but you want text first, add class="mobile-text-first" to the parent container */
+    .mobile-text-first {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+    }
+
+    /* 3. REORDER CONTENT (IMAGE FIRST) */
+    /* If you want to force the image to the top, add class="mobile-image-first" to the parent container */
+    .mobile-image-first {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+}
+
+
+/* CONTACT SUCCESS MESSAGE */
+.status-message {
+    display: none; /* Hidden by default */
+    background: rgba(10, 92, 54, 0.1); /* Very subtle green tint */
+    border: 1px solid green;
+    color: var(--text-main);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 0.9rem;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.status-message.active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.status-message.error {
+    border-color: #ff4444;
+    background: rgba(255, 68, 68, 0.1);
+}
+
+.status-icon {
+    color: var(--accent-gold);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+input:disabled, 
+textarea:disabled, 
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none; /* Prevents clicking */
+    filter: grayscale(100%);
+}
+
+/* =========================================
+   CONTACT SOCIALS (Alternatives)
+   ========================================= */
+
+.divider-text {
+    font-size: 0.75rem;
+    color: #666;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* =========================================
+   WHITE SOCIAL ICONS & PLAIN FOOTER
+   ========================================= */
+
+/* 1. Style the Social Container */
+.social-icons-row {
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* Spacing between icons */
+    margin-top: 15px;
+}
+
+/* 2. Style the Icons (SVG) */
+.social-icon-white {
+    color: rgba(255, 255, 255, 0.7); /* Default: Slight fade (White) */
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 50%;
+    border: 1px solid transparent; /* Invisible border for sizing */
+    flex-direction: column;
+    text-decoration: none;
+}
+.social-icon-white:hover .social-label{
+     color: var(--accent-gold); /* Pure White on hover */
+    text-decoration: var(--accent-gold);
+    transform: translateY(-3px); /* F*/   
+}
+/* 3. Hover Effect */
+.social-icon-white:hover {
+    color: var(--accent-gold); /* Pure White on hover */
+    text-decoration: var(--accent-gold);
+    transform: translateY(-3px); /* Float up */
+    
+}
+/* End of stylesheet */
