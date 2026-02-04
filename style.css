@@ -1,7 +1,7 @@
 /*
-  Ultra-Premium Dark Portfolio — style.css
-  For: High-status forex trader / entrepreneur / thought leader
-  Dark-mode-only, responsive, glassmorphism, premium typography
+  Premium HR Executive Portfolio — style.css
+  For: Senior HR Executive / Organizational Culture Leader
+  Navy Blue theme with Gold accents, responsive, glassmorphism, premium typography
 */
 
 /* Import Google Fonts */
@@ -9,10 +9,12 @@
 
 /* Root variables */
 :root {
-    --bg-body: #050505;
-    --bg-card: #0A0A0A;
-    --text-main: #F0F0F0;
+    --bg-body: #0A192F;
+    --bg-card: #0F2847;
+    --text-main: #E8EEF5;
     --accent-gold: #C5A059;
+    --primary-navy: #0A192F;
+    --secondary-slate: #64748B;
     --glass-bg: rgba(255, 255, 255, 0.03);
     --glass-border: 1px solid rgba(255, 255, 255, 0.08);
     --radius: 12px;
@@ -20,7 +22,7 @@
     --gap: 24px;
     --shadow-strong: 0 10px 30px rgba(0, 0, 0, 0.8);
     --shadow-soft: 0 6px 18px rgba(0, 0, 0, 0.6);
-    --muted: rgba(240, 240, 240, 0.5);
+    --muted: rgba(232, 238, 245, 0.5);
 }
 
 /* Modern reset & base */
@@ -1212,6 +1214,148 @@ p {
 .gallery-date {
     color: rgba(255, 255, 255, 0.692);
     font-size: 12px;
+}
+
+/* =========================================
+   STATS SECTION (Trust Builder)
+   ========================================= */
+.stats-section {
+    padding: 48px 0;
+    border-top: 1px solid rgba(197, 160, 89, 0.1);
+    border-bottom: 1px solid rgba(197, 160, 89, 0.1);
+    background: linear-gradient(180deg, rgba(10, 25, 47, 0.5), rgba(15, 40, 71, 0.3));
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 24px;
+    background: rgba(197, 160, 89, 0.05);
+    border: 1px solid rgba(197, 160, 89, 0.15);
+    border-radius: 12px;
+    transition: all 280ms ease;
+}
+
+.stat-card:hover {
+    background: rgba(197, 160, 89, 0.1);
+    border-color: rgba(197, 160, 89, 0.3);
+    transform: translateY(-4px);
+}
+
+.stat-number {
+    font-family: 'EB Garamond', serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--accent-gold);
+    margin-bottom: 8px;
+}
+
+.stat-label {
+    font-size: 0.95rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+}
+
+/* =========================================
+   SERVICES SECTION
+   ========================================= */
+.services-section {
+    padding: 60px 0;
+    background: transparent;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 28px;
+    margin-top: 40px;
+}
+
+.service-card {
+    background: var(--glass-bg);
+    border: var(--glass-border);
+    border-radius: 12px;
+    padding: 32px;
+    backdrop-filter: blur(10px) saturate(120%);
+    transition: all 280ms cubic-bezier(.2, .9, .3, 1);
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    background: rgba(197, 160, 89, 0.08);
+    border-color: rgba(197, 160, 89, 0.3);
+    box-shadow: 0 10px 40px rgba(197, 160, 89, 0.1);
+}
+
+.service-icon {
+    font-size: 2.4rem;
+    margin-bottom: 16px;
+}
+
+.service-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-main);
+}
+
+.service-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--muted);
+}
+
+/* =========================================
+   CERTIFICATIONS SECTION
+   ========================================= */
+.certifications-section {
+    padding: 60px 0;
+    background: linear-gradient(180deg, rgba(10, 25, 47, 0.3), rgba(15, 40, 71, 0.2));
+    border-top: 1px solid rgba(197, 160, 89, 0.1);
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.cert-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 24px;
+    background: rgba(197, 160, 89, 0.05);
+    border: 1px solid rgba(197, 160, 89, 0.15);
+    border-radius: 12px;
+    transition: all 280ms ease;
+}
+
+.cert-item:hover {
+    background: rgba(197, 160, 89, 0.1);
+    border-color: var(--accent-gold);
+    transform: translateY(-4px);
+}
+
+.cert-badge {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.cert-item p {
+    font-size: 0.9rem;
+    color: var(--text-main);
+    font-weight: 500;
+    line-height: 1.4;
 }
 
 /* =========================================

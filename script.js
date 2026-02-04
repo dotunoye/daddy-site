@@ -15,98 +15,98 @@
 const thoughtsData = [
     {
         id: 1,
-        title: "The Forex Game: Beyond Charts and Candles",
-        category: "Forex Trading",
-        summary: "Understanding the psychology behind forex movements and how elite traders position themselves ahead of the masses.",
-        fullContent: "The forex market moves on sentiment, data, and institutional positioning. But the real game is about understanding what moves sentiment. Elite traders don't just read charts—they read geopolitics, economic trends, and central bank psychology. This insight explores how to build a trading thesis that accounts for multiple variables and positions you ahead of reactive traders. The forex market moves on sentiment, data, and institutional positioning. But the real game is about understanding what moves sentiment. Elite traders don't just read charts—they read geopolitics, economic trends, and central bank psychology. This insight explores how to build a trading thesis that accounts for multiple variables and positions you ahead of reactive traders.The forex market moves on sentiment, data, and institutional positioning. But the real game is about understanding what moves sentiment. Elite traders don't just read charts—they read geopolitics, economic trends, and central bank psychology. This insight explores how to build a trading thesis that accounts for multiple variables and positions you ahead of reactive traders.",
+        title: "The HMO Dilemma: Balancing Cost vs. Employee Satisfaction in Nigeria",
+        category: "Benefits Administration",
+        summary: "Navigating the complex landscape of HMO provision while managing organizational costs and maximizing employee satisfaction.",
+        fullContent: "The HMO challenge facing Nigerian organizations is one of the most pressing issues in modern HR practice. Organizations must balance premium coverage, employee choice, and cost containment. The key is understanding that health benefits aren't just a compliance checkbox—they're a strategic tool for retention and culture. The best organizations don't ask 'how do we save on HMO?' but rather 'how do we provide excellent healthcare while managing cost?' This insight explores the data-driven approaches to selecting HMO providers, structuring benefit packages, and communicating value to employees. When managed strategically, HMO becomes a competitive advantage that improves both employee satisfaction and organizational cost efficiency.",
         date: "2025-11-28"
     },
     {
         id: 2,
-        title: "Personal Branding in the Digital Age: Why Visibility Equals Opportunity",
-        category: "Personal Branding",
-        summary: "In a world of noise, your personal brand is your moat. Here's how thought leaders build unshakeable positioning.",
-        fullContent: "Your personal brand is the intersection of your expertise, your values, and how consistently you communicate them. Building a premium personal brand isn't about going viral—it's about becoming the obvious choice for your target audience. This requires clarity of message, consistency across platforms, and the courage to have a distinct point of view.",
+        title: "Pension Reform: What Every Employee (and Employer) Needs to Know",
+        category: "Pension Strategy",
+        summary: "Understanding the evolving pension landscape and its implications for workforce planning and retirement security.",
+        fullContent: "Nigeria's pension reform has created both opportunities and challenges for employers and employees. The shift from Defined Benefit to Defined Contribution schemes fundamentally changes how organizations approach retirement benefits. Employers must now become custodians of financial literacy, helping employees understand contribution rates, investment options, and long-term retirement planning. This insight examines the critical aspects of modern pension administration: regulatory compliance, employee communication, investment performance monitoring, and bridging the retirement preparedness gap. Organizations that excel at pension administration don't just meet minimum requirements—they empower employees to take ownership of their retirement futures.",
         date: "2025-11-25"
     },
     {
         id: 3,
-        title: "The Entrepreneur's Paradox: Risk, Capital, and Timing",
-        category: "Entrepreneurship",
-        summary: "Why most entrepreneurs fail isn't because of bad ideas—it's because they don't understand capital dynamics and market timing.",
-        fullContent: "Every successful entrepreneur understands one thing: capital is oxygen. The ability to deploy capital at the right moment—when markets are dislocated, competition is weak, or asset prices are irrational—separates winners from the rest. But knowing when to deploy capital requires deep market knowledge, pattern recognition, and the discipline to wait for asymmetric opportunities.",
+        title: "Retaining Gen Z Talent: It's Not Just About the Salary",
+        category: "Talent Management",
+        summary: "Why millennials and Gen Z employees are reshaping workplace expectations and how organizations must adapt to compete for talent.",
+        fullContent: "The war for talent has fundamentally shifted. Gen Z employees prioritize purpose, growth, flexibility, and culture over salary alone. They want to know what their organization stands for, how they'll develop professionally, and whether their workplace respects work-life boundaries. The organizations winning at Gen Z retention understand that this generation is more data-driven about career choices and less loyal to companies that treat them as interchangeable resources. This insight explores data on what drives Gen Z engagement: transparent career pathways, meaningful mentorship, learning opportunities, flexibility, and authentic company purpose. The organizations investing in these areas are seeing retention improvements of 30-40%, proving that modern talent retention requires a fundamental shift in how we structure work and careers.",
         date: "2025-11-20"
     },
     {
         id: 4,
-        title: "International Markets: The New Frontier for Wealth Creation",
-        category: "International Markets",
-        summary: "Emerging markets and cross-border investments are where the next generation of wealth will be built.",
-        fullContent: "While developed markets are saturated and heavily regulated, emerging markets offer asymmetric growth opportunities. Real estate in fast-growing African cities, forex positions in developing economies, and cross-border e-commerce are creating millionaires today. But success requires on-the-ground knowledge, cultural intelligence, and the willingness to invest where others fear to go.",
+        title: "Navigating Redundancy: How to Manage Layoffs with Empathy",
+        category: "Employee Relations",
+        summary: "The human and strategic approach to workforce reductions that preserve organizational culture and maintain employer brand.",
+        fullContent: "Redundancy is one of the most challenging situations an HR leader will manage. How organizations handle layoffs says everything about their values and culture. The best-managed redundancy processes balance organizational necessity with genuine care for affected employees. This requires transparency about decision-making, clarity on selection criteria, fair severance packages, and genuine outplacement support. This insight covers the psychological aspects of layoff management—survivor guilt, organizational trust erosion, and the long-term impact on remaining employees. Organizations that manage redundancy with empathy maintain higher engagement post-layoff and recover faster to high performance. The cost of poor redundancy management extends far beyond severance—it includes reputation damage, talent exodus, and cultural deterioration.",
         date: "2025-11-18"
     },
     {
         id: 5,
-        title: "The Art of Investment Thesis Development",
-        category: "Investments",
-        summary: "How to build conviction in your investments by developing a coherent, evidence-based thesis.",
-        fullContent: "An investment thesis isn't just a hunch—it's a detailed framework of assumptions, risk factors, and catalysts. Professional investors spend weeks building a thesis before deploying capital. Your thesis should answer: Why is this undervalued? What's the catalyst for repricing? What could go wrong? By thinking systematically, you reduce emotion and improve returns.",
+        title: "The 300-Staff Threshold: How Culture Shifts When You Scale",
+        category: "Organizational Culture",
+        summary: "Why scaling from 100 to 300 employees requires a fundamental redesign of how you build and maintain organizational culture.",
+        fullContent: "Organizations managing 300+ employees face a critical inflection point: they can no longer rely on informal communication and founder-led culture. This is where many organizations fail—they scale operations but not culture. The data shows that organizations crossing the 300-person threshold experience significant culture deterioration without intentional intervention. This requires moving from culture-by-osmosis to culture-by-design: documented values, deliberate onboarding, formal feedback systems, and explicit norm-setting. The key insight: culture doesn't 'happen' at scale—it must be engineered. Organizations that succeed understand that scaling culture is as important as scaling operations. They invest in structure, communication systems, and leadership development. Companies that view this as a cost rather than an investment often see retention drop 20-30% during this transition.",
         date: "2025-11-15"
     },
     {
         id: 6,
-        title: "Luxury Business Culture: The Economics of Premium Positioning",
-        category: "Luxury Business",
-        summary: "Understanding the economics of luxury brands and how scarcity, exclusivity, and status drive premium pricing.",
-        fullContent: "Luxury isn't about price—it's about perception. Rolex doesn't charge $15,000 for a watch because of the materials; they charge it because of exclusivity, heritage, and status. Building a premium business requires mastering the art of scarcity, creating aspirational positioning, and building a brand narrative that transcends functional benefits.",
+        title: "Remote Work vs. Office Culture: Finding the Hybrid Sweet Spot",
+        category: "Workplace Strategy",
+        summary: "The data-driven approach to hybrid work design that balances productivity, collaboration, and employee wellbeing.",
+        fullContent: "Post-pandemic, the hybrid work debate continues. The question isn't whether remote work is 'good' or 'bad'—it's how to design a hybrid model that serves organizational and individual needs. The research is clear: full remote or full office have trade-offs. Remote work delivers flexibility and focus; office work delivers collaboration and culture. The organizations winning at hybrid work have made strategic choices about: which roles suit remote work, which require in-office presence, how often collaboration is needed, and what the employee experience looks like. This insight examines the framework for building a hybrid strategy: role-based policies (not one-size-fits-all), transparent communication, technology investment for equity, and regular assessment of what's working. The best hybrid models aren't static—they evolve based on business needs and employee feedback. Organizations treating hybrid as a permanent shift (not a temporary measure) are building more resilient, engaged workforces.",
         date: "2025-11-12"
     },
     {
         id: 7,
-        title: "Wealth Building 101: The Foundation of Financial Mastery",
-        category: "Finances",
-        summary: "The fundamental principles that separate wealth builders from those stuck in the rat race.",
-        fullContent: "Wealth building follows predictable patterns: income, capital formation, intelligent deployment, and compounding. Most people fail at step one—they don't earn enough. The second failure point is capital formation—they spend everything. The third is deployment—they're too conservative or too reckless. And the fourth is patience—they exit positions too early. Master these four stages and you're in the top 1%.",
+        title: "Building High-Performance Teams: The Science of Team Composition",
+        category: "Talent Management",
+        summary: "How to scientifically assess and assemble teams that consistently deliver exceptional results.",
+        fullContent: "Team performance isn't random—it's predictable when you understand the science. High-performing teams have deliberate composition: complementary skills, diverse thinking styles, psychological safety, and clear accountability. The best HR leaders use data to understand which team compositions drive performance. This includes assessment tools for cognitive styles, behavioral tendencies, and skills gaps. The insight examines how to build teams that avoid groupthink while maintaining alignment. It's about balancing diversity with cohesion, expertise with openness to learning, and individual achievement with collective goals. Organizations investing in team science see 25-40% improvements in team productivity and significantly higher retention of high performers.",
         date: "2025-11-08"
     },
     {
         id: 8,
-        title: "The Thought Leader's Edge: How to Build Authority and Influence",
-        category: "Personal Branding",
-        summary: "Why some people build devoted followings while others shout into the void. It's about consistency, uniqueness, and value.",
-        fullContent: "Authority is built through consistent, high-quality contribution over time. You can't fake it; your audience will know. The path to thought leadership is: 1) Find a niche where you have genuine expertise. 2) Create content that's 10x better than what exists. 3) Be consistent for 2-3 years minimum. 4) Engage authentically with your community. Success is inevitable if you follow this path.Authority is built through consistent, high-quality contribution over time. You can't fake it; your audience will know. The path to thought leadership is: 1) Find a niche where you have genuine expertise. 2) Create content that's 10x better than what exists. 3) Be consistent for 2-3 years minimum. 4) Engage authentically with your community. Success is inevitable if you follow this path.Authority is built through consistent, high-quality contribution over time. You can't fake it; your audience will know. The path to thought leadership is: 1) Find a niche where you have genuine expertise. 2) Create content that's 10x better than what exists. 3) Be consistent for 2-3 years minimum. 4) Engage authentically with your community. Success is inevitable if you follow this path.Authority is built through consistent, high-quality contribution over time. You can't fake it; your audience will know. The path to thought leadership is: 1) Find a niche where you have genuine expertise. 2) Create content that's 10x better than what exists. 3) Be consistent for 2-3 years minimum. 4) Engage authentically with your community. Success is inevitable if you follow this path.",
+        title: "The Art of Strategic HR Planning: Aligning Talent with Business Strategy",
+        category: "HR Strategy",
+        summary: "Why most organizations fail at workforce planning and how to build a talent strategy that drives business success.",
+        fullContent: "The gap between business strategy and talent strategy is where most organizations struggle. Strategic HR requires understanding not just current needs but future talent requirements. This means analyzing business growth plans, competitive dynamics, skill evolution, and market availability. Best-in-class organizations integrate talent planning into strategic planning, not as an afterthought. They model scenarios: what talent do we need for growth? What skills will become obsolete? Where are talent gaps likely to emerge? This insight explores the frameworks for scenario planning, competitive talent positioning, and proactive capability building. Organizations that excel at strategic HR planning reduce time-to-fill by 30-40%, improve quality-of-hire, and retain critical talent. The investment in planning pays dividends through faster execution and reduced attrition.",
         date: "2025-11-05"
     },
     {
         id: 9,
-        title: "Currency Markets: Understanding Global Flows and Positioning",
-        category: "Forex Trading",
-        summary: "How central banks, geopolitical events, and capital flows shape forex trends over weeks, months, and years.",
-        fullContent: "Forex moves on macro fundamentals. When you understand that the ECB is hiking rates while the Fed is cutting, you can position for EUR/USD moves weeks in advance. When you see capital fleeing emerging markets due to geopolitical risk, you can trade currency depreciation. The key is reading macro indicators, understanding policy intentions, and positioning before the consensus catches on.",
+        title: "Creating Psychological Safety: The Foundation of High-Trust Organizations",
+        category: "Organizational Culture",
+        summary: "How psychological safety drives innovation, engagement, and organizational resilience.",
+        fullContent: "Psychological safety—the belief that you can take interpersonal risks without fear of negative consequences—is the foundation of high-performing organizations. When employees feel safe to speak up, make mistakes, ask for help, and challenge ideas, organizations innovate faster and execute better. Research by Google, Amazon, and other high-performers confirms this pattern. Yet many organizations claim to value safety while inadvertently punishing candor, vulnerability, and dissent. This insight explores how to deliberately build psychological safety: through leadership behavior, explicit norms, equitable treatment, and responsive listening. It's not about being soft—it's about building organizations where people do their best thinking because they're not anxious about political consequences. Organizations with high psychological safety see higher innovation rates, faster problem-solving, and significantly better retention.",
         date: "2025-10-30"
     },
     {
         id: 10,
-        title: "Building Multiple Income Streams: The Wealthy Person's Playbook",
-        category: "Entrepreneurship",
-        summary: "Why relying on a single income source is risky, and how to structure diversified revenue.",
-        fullContent: "The wealthy don't rely on a single paycheck. They build a portfolio of income streams: business revenue, investment returns, royalties, and passive income. Each stream has different risk profiles, timing, and growth rates. By building 3-5 income streams, you're insulated from market shocks and positioned for exponential growth. Start with your core business, then add complementary revenue sources.",
+        title: "The Future of Work: Skills Evolution and Continuous Learning",
+        category: "Talent Development",
+        summary: "Why continuous learning is no longer optional and how to build learning organizations that thrive amid change.",
+        fullContent: "The pace of skill obsolescence is accelerating. Technical skills that took 20 years to become outdated now have half-lives of 2-3 years in many fields. This fundamentally changes what HR must focus on: not hiring perfect talent but hiring people who can learn continuously. The organizations building learning cultures invest in: access to quality learning, time for learning, a culture that values growth over perfection, and feedback systems that support development. This insight examines the business case for learning investment: organizations with strong learning cultures see 30-40% higher engagement, lower attrition, and better innovation rates. The ROI isn't just financial—it's organizational resilience. In uncertain times, organizations full of continuous learners adapt faster.",
         date: "2025-10-25"
     },
     {
         id: 11,
-        title: "The Psychology of Money: Why Smart People Make Dumb Financial Decisions",
-        category: "Finances",
-        summary: "Behavioral finance reveals that money decisions are emotional, not rational. Understanding this is the first step to mastery.",
-        fullContent: "IQ and financial success don't correlate. Why? Because money is emotional. Fear makes us sell winners too early. Greed makes us chase bubbles. Overconfidence makes us take excessive risks. Social proof makes us follow the crowd. By understanding these psychological biases, you can build systems that protect you from yourself—automated investments, predetermined stop-losses, and written investment theses.",
+        title: "Compensation Strategy: Moving Beyond Benchmarking to Strategic Positioning",
+        category: "Compensation & Benefits",
+        summary: "How to use compensation strategically to attract talent, drive performance, and align with business objectives.",
+        fullContent: "Most organizations approach compensation defensively: 'what does the market pay?' The best organizations ask strategically: 'what do we need to pay to win talent in our market, attract the right profile, and sustain high performance?' This requires understanding compensation beyond salary: total rewards including benefits, career development, flexibility, and meaningful work. This insight explores compensation as a strategic lever: for high performers you want to retain, for underperformers you want to transition, and for critical roles where you need to lead market. It also examines the relationship between pay transparency and equity—organizations moving toward transparent pay structures see improvements in trust and retention while forcing systemic equity conversations. The framework moves from 'what's the standard rate' to 'what's our talent strategy and how does compensation support it?'",
         date: "2025-10-20"
     },
     {
         id: 12,
-        title: "Positioning in Chaos: How Uncertainty Creates Wealth Opportunities",
-        category: "Investments",
-        summary: "Market dislocations and crises are the richest hunting grounds for investors willing to act when others panic.",
-        fullContent: "The greatest wealth is built during uncertainty. When markets crash 40%, most people panic and sell. Smart investors see opportunity. They've done their homework, built conviction in undervalued assets, and positioned capital on the sidelines for moments like these. The next recession will create thousands of new millionaires—will you be one of them, or will you be panicking with the masses?",
+        title: "Employee Wellness Beyond Fitness: A Holistic Approach to Employee Wellbeing",
+        category: "Employee Wellness",
+        summary: "Why traditional wellness programs fail and how to build comprehensive wellbeing strategies that stick.",
+        fullContent: "Many wellness programs fail because they treat wellbeing as an afterthought—a perks checklist rather than a strategic priority. True wellbeing spans physical health, mental health, financial wellness, social connection, and sense of purpose. Organizations building comprehensive wellbeing programs see measurable impact: reduced absenteeism, improved engagement, and better retention. This insight examines the distinction between wellness programs (activities and perks) and wellbeing culture (systems and norms that prioritize health). It includes how to assess true employee wellbeing (not just satisfaction surveys), design interventions that stick, and measure impact. The data shows that organizations treating wellbeing as core to strategy—not as a benefits department initiative—see 20-30% improvements in engagement and measurable reductions in burnout.",
         date: "2025-10-15"
     }
 ];
@@ -119,73 +119,73 @@ const galleryData = [
     {
         id: 1,
         src: "",
-        caption: "Market Analysis Session - Tracking Global Flows",
+        caption: "HR Strategy Session - Organizational Transformation Planning",
         date: "2025-10-15"
     },
     {
         id: 2,
         src: "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=500&h=500&fit=crop",
-        caption: "Premium Networking Event - Lagos",
+        caption: "Corporate Leadership Event - Lagos HR Summit",
         date: "2025-10-15"
     },
     {
         id: 3,
         src: "assets/fav7.webp",
-        caption: "International Business Summit - Dubai",
+        caption: "International Talent Management Conference - Dubai",
         date: "2025-10-15"
     },
     {
         id: 4,
         src: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=500&fit=crop",
-        caption: "Trading Floor - Real Time Decision Making",
+        caption: "Executive Coaching Session - Leadership Development",
         date: "2025-10-15"
     },
     {
         id: 5,
         src: "assets/panel meeting.webp",
-        caption: "Thought Leadership Panel - Wealth Creation Strategies",
+        caption: "Thought Leadership Panel - Organizational Culture Strategies",
         date: "2025-10-15"
     },
     {
         id: 6,
         src: "assets/fav6.jpg",
-        caption: "Strategic Planning Session",
+        caption: "Strategic HR Planning Meeting - Talent Acquisition",
         date: "2025-10-15"
     },
     {
         id: 7,
         src: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=500&fit=crop",
-        caption: "International Markets Mastery Conference",
+        caption: "Annual HR Excellence Conference - Best Practices Showcase",
         date: "2025-10-15"
     },
     {
         id: 8,
         src: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500&h=500&fit=crop",
-        caption: "Premium Lifestyle - Luxury Events",
+        caption: "Corporate Wellness Summit - Employee Wellbeing Innovation",
         date: "2025-10-15"
     },
     {
         id: 9,
         src: "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=500&h=500&fit=crop",
-        caption: "Entrepreneur Networking - Building Connections",
+        caption: "Executive Networking Event - Building Strategic Partnerships",
         date: "2025-10-15"
     },
     {
         id: 10,
         src: "https://images.unsplash.com/photo-1552674605-5defe6aa44bb?w=500&h=500&fit=crop",
-        caption: "Business Protocol - Fine Dining & Conversations",
+        caption: "Corporate Governance Summit - Leadership Excellence",
         date: "2025-10-15"
     },
     {
         id: 11,
         src: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=500&fit=crop",
-        caption: "Market Leadership - Thought Leader Conference",
+        caption: "HR Innovation Conference - Future of Work",
         date: "2025-10-15"
     },
     {
         id: 12,
         src: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500&h=500&fit=crop",
-        caption: "Global Positioning - International Markets",
+        caption: "International HR Leadership Summit - Global Best Practices",
         date: "2025-10-15"
     }
 ];
