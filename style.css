@@ -1450,6 +1450,155 @@ p {
 }
 
 /* =========================================
+   EXPERIENCE TIMELINE SECTION (Fixed Column)
+   ========================================= */
+.experience-section {
+    border-top: 1px solid rgba(197, 160, 89, 0.1);
+    border-bottom: 1px solid rgba(197, 160, 89, 0.1);
+}
+
+.timeline {
+    position: relative;
+    max-width: 950px; /* Wider for better card proportions */
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Spine: Fixed to the left */
+.timeline-spine {
+    position: absolute;
+    left: 30px; /* Fixed position */
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, var(--accent-gold), rgba(197, 160, 89, 0.1));
+    z-index: 0;
+    transform: none; /* Removed the 50% center transform */
+}
+
+.timeline-items {
+    position: relative;
+    z-index: 1;
+}
+
+/* Timeline Item: Forced Vertical and Left-Aligned */
+.timeline-item {
+    display: flex;
+    flex-direction: column; /* Prevents horizontal stretching */
+    justify-content: flex-start;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 50px;
+    padding-left: 70px; /* Space for the spine/node */
+    padding-right: 0;
+    width: 100%;
+    position: relative;
+}
+
+/* Node: Pinned to the left spine */
+.timeline-node {
+    position: absolute;
+    left: 22px; /* Center of the 2px spine at 30px left */
+    top: 30px;
+    width: 16px;
+    height: 16px;
+    background: var(--bg-body);
+    border: 2px solid var(--accent-gold);
+    border-radius: 50%;
+    z-index: 2;
+    transform: none;
+}
+
+/* Card: Now spans the width */
+.timeline-card {
+    background: var(--glass-bg);
+    border: var(--glass-border);
+    border-radius: var(--radius);
+    padding: 32px;
+    backdrop-filter: blur(10px) saturate(120%);
+    width: 100%;
+    transition: all 280ms ease;
+}
+
+.timeline-item:hover .timeline-card {
+    transform: translateY(-5px);
+    border-color: rgba(197, 160, 89, 0.4);
+    background: rgba(197, 160, 89, 0.05);
+}
+
+/* Ensure the card header uses space well */
+.timeline-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.timeline-header-text {
+    flex: 1;
+}
+
+.timeline-role {
+    font-size: 1.3rem;
+    font-family: 'EB Garamond', serif;
+    margin: 0;
+}
+
+.timeline-year {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    color: var(--accent-gold);
+    background: rgba(197, 160, 89, 0.1);
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+
+/* =========================================
+   RESPONSIVE (Tablet & Mobile)
+   ========================================= */
+@media (max-width: 768px) {
+    .timeline-spine {
+        left: 20px;
+    }
+    .timeline-item {
+        padding-left: 50px;
+    }
+    .timeline-node {
+        left: 12px;
+    }
+    .timeline-card {
+        padding: 24px;
+    }
+    .timeline-card-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Hide node on very small screens to save space as you requested */
+@media (max-width: 480px) {
+    .timeline-node {
+        display: none; 
+    }
+    .timeline-spine {
+        display: none;
+    }
+    .timeline-item {
+        padding-left: 0; /* Remove the gap since the line is gone */
+        margin-bottom: 30px;
+    }
+    .timeline-card-header {
+        flex-direction: column; /* Stack Title and Year on mobile */
+    }
+    .timeline {
+    position: relative;
+    max-width: 950px; /* Wider for better card proportions */
+    margin: 0 auto;
+    padding: 20px 0px;
+}
+}
+/* =========================================
    CERTIFICATIONS SECTION
    ========================================= */
 .certifications-section {
